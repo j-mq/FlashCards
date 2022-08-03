@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const CardsDisplay = () => {
-	return <div>CardsDisplay</div>;
+type CardsDisplayProps = {
+  color: string;
 };
+
+const CardsDisplay: React.FC<CardsDisplayProps> = ({
+  color,
+}: CardsDisplayProps) => <div>CardsDisplay{color}</div>;
 
 export default CardsDisplay;
