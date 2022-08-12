@@ -6,6 +6,8 @@ const theme = {
   backgroundPrimaryDark: '#9F8330',
   backgroundSecondaryMain: '#9F80FF',
   backgroundSecondaryDark: '#3C00F5',
+  borderDark: '#4D4D4D',
+  borderLight: '#848484',
 };
 
 export default theme;

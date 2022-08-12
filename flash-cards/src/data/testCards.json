@@ -1,0 +1,35 @@
+[
+  {
+    "text": "Card 01, Lorem red ipsum dolor sit amet...",
+    "image": "../assets/images/0_Grizzly.png"
+  },
+  {
+    "text": "Card 02, Lorem red ipsum dolor sit amet...",
+    "image": "../assets/images/0_Panda.png"
+  },
+  {
+    "text": "Card 03, Lorem red ipsum dolor sit amet...",
+    "image": "../assets/images/0_Polar.png"
+  },
+  {
+    "text": "Card 04, Lorem red ipsum dolor sit amet..."
+  },
+  {
+    "text": "Card 05, Lorem red ipsum dolor sit amet..."
+  },
+  {
+    "text": "Card 06, Lorem red ipsum dolor sit amet..."
+  },
+  {
+    "text": "Card 07, Lorem red ipsum dolor sit amet..."
+  },
+  {
+    "text": "Card 08, Lorem red ipsum dolor sit amet..."
+  },
+  {
+    "text": "Card 09, Lorem red ipsum dolor sit amet..."
+  },
+  {
+    "text": "Card 10, Lorem red ipsum dolor sit amet..."
+  }
+]
