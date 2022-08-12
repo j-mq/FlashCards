@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/flash-cards/static/css/main.2ad90162.css",
-    "main.js": "/flash-cards/static/js/main.c3cbcd09.js",
-    "static/js/787.28035159.chunk.js": "/flash-cards/static/js/787.28035159.chunk.js",
-    "index.html": "/flash-cards/index.html",
-    "main.2ad90162.css.map": "/flash-cards/static/css/main.2ad90162.css.map",
-    "main.c3cbcd09.js.map": "/flash-cards/static/js/main.c3cbcd09.js.map",
-    "787.28035159.chunk.js.map": "/flash-cards/static/js/787.28035159.chunk.js.map"
+    "main.css": "/FlashCards/static/css/main.2ad90162.css",
+    "main.js": "/FlashCards/static/js/main.2c2823a9.js",
+    "static/js/787.28035159.chunk.js": "/FlashCards/static/js/787.28035159.chunk.js",
+    "index.html": "/FlashCards/index.html",
+    "main.2ad90162.css.map": "/FlashCards/static/css/main.2ad90162.css.map",
+    "main.2c2823a9.js.map": "/FlashCards/static/js/main.2c2823a9.js.map",
+    "787.28035159.chunk.js.map": "/FlashCards/static/js/787.28035159.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ad90162.css",
-    "static/js/main.c3cbcd09.js"
+    "static/js/main.2c2823a9.js"
   ]
 }
