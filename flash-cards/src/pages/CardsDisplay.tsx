@@ -12,7 +12,7 @@ const CardsDisplayContainer = styled.div`
   height: 100vh;
   width: 100%;
 
-  @media (max-height: 844px) {
+  @media (max-height: 640px) {
     flex-direction: row;
     justify-content: center;
   }
@@ -36,7 +36,7 @@ const DrawnCards = styled.div<DrawnCardsProps>`
 
 const DrawnCardsContainer = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   height: 565px;
   width: 350px;
@@ -49,14 +49,12 @@ const ActionsArea = styled.div`
   align-items: flex-start;
   width: 390px;
   padding: 20px;
-  margin-top: 16px;
 
-  @media (max-height: 844px) {
+  @media (max-height: 640px) {
     flex-direction: column;
-    height: 540px;
+    height: 565px;
     width: auto;
     margin-top: 0px;
-    margin-left: 16px;
     padding: 0px 20px;
   }
 `;
@@ -76,6 +74,10 @@ const RemainingCards = styled.div<RemainingCardsProps>`
 `;
 
 const DrawButton = styled.button`
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   transition-duration: 150ms;
   background: ${(props) => props.theme.backgroundPrimaryMain};
   width: 150px;
@@ -94,16 +96,21 @@ const DrawButton = styled.button`
 `;
 
 const ShuffleButton = styled.button`
-  background: none;
+  padding: 16px;
+  border-radius: 10px;
+  transition-duration: 150ms;
+  background: ${(props) => props.theme.backgroundSecondaryLightest};
   border: none;
-  color: white;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
   color: ${(props) => props.theme.backgroundSecondaryMain};
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
   :active {
-    color: ${(props) => props.theme.backgroundSecondaryDark};
+    color: white;
     transform: scale(0.95);
+    background: ${(props) => props.theme.backgroundSecondaryMain};
+    box-shadow: none;
   }
 `;
 
