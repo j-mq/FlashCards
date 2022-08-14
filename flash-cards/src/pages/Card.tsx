@@ -9,16 +9,29 @@ const CardContainer = styled.div`
   border-radius: 10px;
 `;
 
-const CardImage = styled.img`
+const CardImageContainer = styled.div`
   width: 100%;
   height: 63%;
   background: ${(props) => props.theme.backgroundPrimaryLight};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
 `;
 
-const CardText = styled.div`
+const CardImage = styled.img`
   width: 100%;
-  height: 33%;
+  height: 100%;
+  object-fit: contain;
+`;
+
+interface CardTextProps {
+  hasImage: boolean;
+}
+
+const CardText = styled.div<CardTextProps>`
+  width: 100%;
   display: flex;
   background: ${(props) => props.theme.backgroundPrimaryLightest};
   padding: 20px;
@@ -27,6 +40,20 @@ const CardText = styled.div`
   font-size: 1.25rem;
   line-height: 150%;
   letter-spacing: 0.02em;
+  ${(props) => {
+    if (props.hasImage) {
+      return `
+        height: 33%;
+        align-items: flex-start;
+        justify-content: flex-start;
+      `;
+    }
+    return `
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      `;
+  }}
 `;
 
 type CardProps = {
@@ -36,8 +63,12 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ text, image }: CardProps) => (
   <CardContainer>
-    {image && <CardImage src={image} />}
-    <CardText>{text}</CardText>
+    {image && (
+      <CardImageContainer>
+        <CardImage src={image} />
+      </CardImageContainer>
+    )}
+    <CardText hasImage={!!image}>{text}</CardText>
   </CardContainer>
 );
 
