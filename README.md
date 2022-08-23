@@ -1,5 +1,5 @@
 # FlashCards
-Simple flash cards web application for studying
+Simple flash cards web application for studying.
 Thought as a free resource for teachers with some knowledge on development
 
 # Usage
